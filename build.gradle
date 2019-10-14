@@ -1,0 +1,12 @@
+task dep1 {
+   println "dep task test1"
+}
+
+task dep2 {
+   println "dep task test2"
+}
+
+task first {
+   dependsOn dep1, dep2
+   println "task test"
+}
